@@ -10,4 +10,49 @@
 }
 header{
     height: 120px;
+    width: 100%;
+    background-color: #FEB600;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    height: 100%;
+}
+header .navbar{
+    display: flex;
+}
+header .navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+}
+header .navbar .top-navbar{
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 40%;
+}
+header .navbar .top-navbar input{
+    height: 40px;
+    width: 80%;
+    border-radius: 20px;
+}
+header .navbar .top-navbar a{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navbar .bottom-navbar{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+header .navbar .bottom-navbar ul{
+    width: 100%;
+    list-style-type: none;
+}
+header .navbar .bottom-navbar ul li{
+    width: 25%;
 }
