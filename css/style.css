@@ -8,3 +8,15 @@
     --secondary-color: #FEB600;
     --tertiary-color: #2B1A10;
 }
+
+.imageBiereDuMoment{
+    background-image: url("../assets/chimay.jpg");
+    height: 456px;
+    width: 100%;
+    background-size: cover;
+    background-position: 0 -160px;
+    text-align: center;
+    align-items: flex-end ;
+    color: white;
+    
+}
