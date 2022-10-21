@@ -9,3 +9,34 @@
     --tertiary-color: #2B1A10;
 }
 header{}
+
+
+h2{
+    font-family:'Cinzel', serif;
+    padding: 1.22rem;
+    color: #FEB600;
+    background: #2B1A10;
+    display: flex;
+    justify-content: center;
+}
+
+p{  font-size: 22px;
+    background: #FEB600;
+    display: flex;
+    text-align: center;
+    
+}
+
+.section2{
+    background: #FEB600;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.plaisir{
+    align-self: flex-end;
+    
+   
+}
