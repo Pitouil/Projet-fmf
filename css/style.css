@@ -24,7 +24,7 @@ p{  font-size: 22px;
     background: #FEB600;
     display: flex;
     text-align: center;
-    
+    padding: 2 rem;
 }
 
 .section2{
@@ -32,11 +32,14 @@ p{  font-size: 22px;
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 
 
 }
 .plaisir{
     align-self: flex-end;
-    
-   
+}
+
+.club {
+    padding: 1rem;
 }
