@@ -45,14 +45,33 @@ header .navbar .top-navbar a{
     align-items: center;
 }
 header .navbar .bottom-navbar{
-    display: flex;
-    justify-content: center;
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    height 
+}
+header .navbar .bottom-navbar .scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 25%;
+    font-size: 32px;
 }
 header .navbar .bottom-navbar ul{
     width: 100%;
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 header .navbar .bottom-navbar ul li{
-    width: 25%;
+    width: 100%;
+   
 }
+.navbar .bottom-navbar ul li a{
+    
+    display: flex;
+   justify-content: center;
+}
+
