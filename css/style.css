@@ -124,18 +124,42 @@ header .basket a:hover{
   margin: 0;
   height: 100%;
 }
+.boutique{
+  display: flex;
+}
 .filter{
   width: 15%;
 }
 .filter form {
   display: flex;
   flex-direction: column;
+  color: #feb600;
 }
 .filter form div{
   display: flex;
   justify-content: space-between;
 }
+.boutique .list_card{
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+.boutique .carde{
+  background-color:#feb600;
+  width: 80%;
+  margin: 1rem 1rem;
+  border: 10px solid #feb600;
+  border-radius: 20px;
+align-self: center;
+}
+.boutique .carde div{
+  width: 100%;
+}
 
+.boutique .carde img{
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+}
 
 @media screen and ( max-width: 992px){
   header .navbar-main .top-navbar{
