@@ -182,6 +182,51 @@ header .basket a:hover {
 .page{
   text-align: center;
 }
+.container-login{
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+.login{
+  background-color: #feb600;
+  height: 500px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 15%;
+}
+.login h2{
+  font-weight: bold;
+}
+.login div{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.login div input{
+  border-radius: 10px;
+}
+.login div label{
+  align-self: center;
+  font-weight: bold;
+}
+.login div input[type="text"]{
+  height: 40px;
+}
+.login div input[type="password"]{
+  height: 40px;
+}
+.login div input[type="submit"]{
+  padding: 0 1rem;
+  width: 50%;
+  align-self: center;
+}
+.login div a{
+  align-self: center;
+}
 @media screen and (max-width: 992px) {
   header .navbar-main .top-navbar {
     display: none;
