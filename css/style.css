@@ -269,6 +269,11 @@ header .basket a:hover {
   display: flex;
   justify-content: end;
 }
+.register .align {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 @media screen and (max-width: 992px) {
   header .navbar-main .top-navbar {
     display: none;
