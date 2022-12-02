@@ -247,17 +247,16 @@ header .basket a:hover {
   gap: 1rem;
 }
 
-
-.register .email-line input{
+.register .email-line input {
   width: 100%;
 }
-.register .adress-line input{
+.register .adress-line input {
   width: 100%;
 }
-.register .second-adress-line{
+.register .second-adress-line {
   display: flex;
 }
-.register .second-adress-line input[name="zip-code"]{
+.register .second-adress-line input[name="zip-code"] {
   width: 55%;
 }
 .register .phone-number {
@@ -265,7 +264,7 @@ header .basket a:hover {
   flex-direction: column;
   align-items: center;
 }
-.register .submit-valid{
+.register .submit-valid {
   display: flex;
   justify-content: end;
 }
@@ -273,6 +272,73 @@ header .basket a:hover {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.profil h2 {
+  text-align: center;
+  color: #feb600;
+}
+.user {
+  display: flex;
+  height: 400px;
+
+}
+.user .profilPhoto {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user .profilPhoto img {
+  object-fit: contain;
+  width: 50%;
+}
+.user .userDetail {
+  width: 50%;
+  background-color: #feb600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.user .userDetail .name{
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+}
+.delivery h2{
+  text-align: center;
+  color: #feb600;
+  background-color: #2b1a10;
+  width: 100%;
+}
+.delivery{
+  background-color: #feb600;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.delivery .table-delivery{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delivery table{
+  width: 100%;
+  padding-top: 1rem;
+}
+.delivery table th{
+  border: 1px solid #2b1a10;
+  height: 40px;
+  
+}
+.delivery .delivery-detail{
+  height: 40%;
+  width: 80%;
+  background-color: #eae0dd;
+
 }
 @media screen and (max-width: 992px) {
   header .navbar-main .top-navbar {
