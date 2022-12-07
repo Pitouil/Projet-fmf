@@ -93,6 +93,9 @@ header .basket a {
   text-decoration: none;
   color: #2b1a10;
 }
+header .basket .basket-login{
+  display: none;
+}
 header .basket a:hover {
   background-color: #2b1a10;
   color: #feb600;
@@ -554,5 +557,11 @@ afin d'avoir toutes les propriétés générales liées au bg dans la meme propr
     align-items: center;
     gap: 2rem;
     border-radius: 0%;
+  }
+  header .navbar-main .top-navbar {
+    display: none;
+  }
+  header .basket .basket-login{
+    display: initial;
   }
 }
