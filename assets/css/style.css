@@ -524,4 +524,19 @@ afin d'avoir toutes les propriétés générales liées au bg dans la meme propr
   section{
     margin: 0;
   }
+  .container-login{
+    margin: 0px;
+  }
+  .login {
+    background-color: #feb600;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0%;
+  }
+
 }
