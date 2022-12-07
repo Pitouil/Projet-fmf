@@ -344,16 +344,23 @@ header .basket a:hover {
 
 }
 @media screen and (max-width: 992px) {
-  header .navbar-main .top-navbar {
+  header .navbar-main .top-navbar input {
     display: none;
   }
+  header .navbar-main .top-navbar input{
+    display: none;
+  }
+
   .d-flex .form-control {
     display: initial;
   }
   .d-flex button {
     display: initial;
   }
+  header img{
+    display: none;
+  }
+  section{
+    margin: 0;
+  }
 }
-/* section{
-  margin: 0;
-} */
