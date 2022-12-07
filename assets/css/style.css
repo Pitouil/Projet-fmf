@@ -118,6 +118,9 @@ header .basket a:hover {
 .collapse .dropdown-menu {
   background-color: #feb600;
 }
+.navbar .collapse{
+  background-color: #FEB600;
+}
 /* color text bouton menu  */
 .navbar-main .navbar-light .navbar-nav .nav-link {
   color: #2b1a10;
@@ -561,7 +564,10 @@ afin d'avoir toutes les propriétés générales liées au bg dans la meme propr
   header .navbar-main .top-navbar {
     display: none;
   }
+  header .basket{
+    width: 70%;
+  }
   header .basket .basket-login{
-    display: initial;
+    display: inherit;
   }
 }
