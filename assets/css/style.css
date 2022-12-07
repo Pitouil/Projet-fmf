@@ -538,5 +538,10 @@ afin d'avoir toutes les propriétés générales liées au bg dans la meme propr
     gap: 2rem;
     border-radius: 0%;
   }
-
+  .login div input[type="submit"] {
+    padding: 0 1rem;
+    width: 50%;
+    align-self: center;
+    font-size: 0.7rem;
+  }
 }
