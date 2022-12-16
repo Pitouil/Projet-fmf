@@ -29,9 +29,9 @@ body {
   width: 100%;
   display: none;
 }
-section{
+/* section{
   margin: 60px;
-}
+} */
 header {
   height: 90px;
   width: 100%;
@@ -190,15 +190,17 @@ afin d'avoir toutes les propriétés générales liées au bg dans la meme propr
   display: flex;
   flex-direction: column;
   
+  
 
 
 }
 .plaisir{
   align-self: flex-end;
+  padding: 1rem;
 }
 
 .club {
-  padding: 1rem;
+  padding: 2rem;
 }
 .imgChoiceUsers{
   display: flex;
