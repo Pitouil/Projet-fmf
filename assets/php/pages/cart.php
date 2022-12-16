@@ -5,29 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-    defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
     ></script>
-    <link rel="stylesheet" href="../assets/css/header.css" />
-    <link rel="stylesheet" href="../assets/css/footer.css" />
-    <link rel="stylesheet" href="../assets/css/index.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <title>Panier</title>
   </head>
-  <body>
-    <div class="main-img">
-    <img src="./assets/logo-decouper.png" alt="Logo du site" />
-    </div>
+  <body class="bodyCart">
     <header>
       <div class="">
-        <img src="./assets/logo-primaire.png" alt="Logo du site" />
+        <img src="../assets/logo-decouper.png" alt="Logo du site" />
       </div>
       <div class="navbar-main">
         <!-- top-navbar a desactiver pour responsive mobile pour le collapse -->
@@ -47,23 +43,23 @@
           </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid h-100">
+          <div class="container-fluid">
             <button
-            class="navbar-toggler "
+              class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
-              >
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
             <div
-              class="collapse navbar-collapse w-50"
+              class="collapse navbar-collapse h-100"
               id="navbarSupportedContent"
             >
-              <ul class="navbar-nav h-100 w-100 me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav h-100 w-25 me-auto mb-2 mb-lg-0">
                 <li class="w-100 h-100 nav-item dropdown">
                   <a
                     class="w-100 h-100 nav-link d-flex justify-content-center align-items-center"
@@ -102,7 +98,7 @@
                   </ul>
                 </li>
               </ul>
-              <ul class="navbar-nav h-100 w-100 me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav h-100 w-25 me-auto mb-2 mb-lg-0">
                 <li class="w-100 h-100 nav-item dropdown">
                   <a
                     class="w-100 h-100 nav-link d-flex justify-content-center align-items-center"
@@ -142,7 +138,7 @@
                   </ul>
                 </li>
               </ul>
-              <ul class="navbar-nav h-100 w-100 me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav h-100 w-25 me-auto mb-2 mb-lg-0">
                 <li class="w-100 h-100 nav-item dropdown">
                   <a
                     class="w-100 h-100 nav-link d-flex justify-content-center align-items-center"
@@ -187,7 +183,7 @@
                   </ul>
                 </li>
               </ul>
-              <ul class="navbar-nav h-100 w-100 me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav h-100 w-25 me-auto mb-2 mb-lg-0">
                 <li class="w-100 h-100 nav-item dropdown">
                   <a
                     class="w-100 h-100 nav-link d-flex justify-content-center align-items-center"
@@ -234,96 +230,52 @@
         </nav>
       </div>
       <div class="basket">
-        <a href="" class="basket-login">Connexion</a>
         <a href="#">Panier</a>
       </div>
     </header>
 
-    <section>
-      <h2>BIÈRES DU MOMENT</h2> 
+    <h1>Votre panier</h1>
 
-      <div class="imageBiereDuMoment imgInSlider">
-        <span>La gamme de bière incontournable du moment</span>
-      </div>
-    </section>
-
-    
-      <h2>Pourquoi avons-nous créé ce site?</h2>
-      <section class="section2">
-          <div class="club"> <p>Notre club est pensé comme un rassemblement de connaisseur désirant des bières artisanales françaises destinées à une communauté de connaisseurs et de gourmets. Nous recueillons leurs avis et nous en servons dans le référencement des bières afin de faire ressortir les meilleurs produits de la manière la plus objective possible. Nous prenons soin de sélectionner le meilleur de la bières afin de ravire les papilles de nos client et tenter de les enmener au 7 eme ciel de la bières tels des ambassadeurs de la sainte bière nous nous proposons de vous accompagner dans une épopée gustative transcendante afin de vous faire toucher du doigt(et de la langue) des merveilles confectionnées par des grands maitres brasseurs exclusifs affiliés à notre club.</p>
-          </div>     
-              <p class="plaisir">Notre plaisir est le vôtre</p>
-    
-     
-    </section>
-     <h2>Nouveautés</h2>
-    <section class="nouveaute">
-      <div class="imgNouveaute"></div>
-      <div class="txtNouveaute">
-
-        <span>
-        gamme de bières
-        de la brasserie
-        Mélusine 
-        Puy d’Enfer
-        </span> 
-        
-        <span>Profitez de notre offre découverte
-          à<strong> 8.90€</strong>
-        </span>
-
-        <a href="">Voir plus</a>
-        
+    <div class="container ">
+        <div class="row text-center bg-success">
+          <div class="col-sm-4">
+            Produit
+          </div>
+          <div class="col">
+            Quantité
+          </div>
+          <div class="col">
+            Prix unitaire
+          </div>
+          <div class="col">
+            Prix total
+          </div>
         </div>
-
-    </section>
-    <h2>Promotions</h2>
-    <section class="promotions">
-      <a href="">
-        <article class="promoCard">
-          <img src="./assets/triple_karmelite.jpg">
-          <div class="textPromoCard">
-            <h3 style="text-align:center ;">Triple Karmeliet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem recusandae, nesciunt voluptates fuga  <span>voir plus...</span> </p>
-            <div>
-              <div><span>30€</span><span style="color: red;">-50%</span></div><span>15€ TTC</span>
+        <div class="row text-center bg-success">
+            <div class="col-sm-4 ">
+                <article class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="./assets/triple_karmelite.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+            </div>
+            <div class="col w-25">
+              <input type="number" class="w-25">
+            </div>
+            <div class="col">
+              Prix unitaire
+            </div>
+            <div class="col">
+              Prix total
             </div>
           </div>
-        </article>
-      </a>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-
-    </section>
-
-    <section>
-      <h2>Choix des utilisateurs</h2>
-      <div class="imgChoiceUsers imgInSlider ">
-        <div class="textPubChxUser">
-          <span>la bière la plus appreciée de nos utilisateurs</span> 
-          <div>
-            <span>A partir de :<span>59.99€</span> </span>
-            
-          </div>      
-          
-        </div>
-
-        <div id="prixChxUser"></div>
-
       </div>
-
-
-    </section>
-
-    <footer></footer>
-    
-  </body>
-    
-  </head>
-  <body>
-    
-  </body>
-</html>
-
