@@ -21,6 +21,14 @@ body {
 #ml {
   background-color: #feb600;
 }
+/* .main-img{
+  display: flex;
+  justify-content: center;
+} */
+.main-img img{
+  width: 100%;
+  display: none;
+}
 section{
   margin: 60px;
 }
@@ -33,6 +41,7 @@ header {
 }
 header img {
   height: 100%;
+  
 }
 header .navbar-main {
   display: flex;
@@ -93,6 +102,9 @@ header .basket a {
   text-decoration: none;
   color: #2b1a10;
 }
+header .basket .basket-login{
+  display: none;
+}
 header .basket a:hover {
   background-color: #2b1a10;
   color: #feb600;
@@ -114,6 +126,9 @@ header .basket a:hover {
 /* couleur menu */
 .collapse .dropdown-menu {
   background-color: #feb600;
+}
+.navbar .collapse{
+  background-color: #FEB600;
 }
 /* color text bouton menu  */
 .navbar-main .navbar-light .navbar-nav .nav-link {
@@ -412,6 +427,7 @@ afin d'avoir toutes les propriétés générales liées au bg dans la meme propr
   align-items: center;
   gap: 2rem;
   border-radius: 15%;
+  padding: 0.5rem;
 }
 .register .register-first-line {
   display: flex;
@@ -565,5 +581,18 @@ afin d'avoir toutes les propriétés générales liées au bg dans la meme propr
     align-items: center;
     gap: 2rem;
     border-radius: 0%;
+  }
+  header .navbar-main .top-navbar {
+    display: none;
+  }
+  header .basket{
+    width: 70%;
+  }
+  header .basket .basket-login{
+    display: inherit;
+  }
+  .main-img img{
+    width: 100%;
+    display: block;
   }
 }
