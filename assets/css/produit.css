@@ -1,0 +1,79 @@
+.photoproduit {
+    display: flex;
+justify-content: center;
+    width: 50%;
+}
+
+.descriptionproduit {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+.caracteristiques {
+    width: 60%;
+    background-color: #FEB600 ;
+    padding: 1.5rem;
+    font-family: 'Alkalami', sans-serif;
+font-size: 19px;
+}
+.photobieresconseil  {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.containeravis {
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 600px;
+    background: darkgrey;
+    font-size: 20px;
+    
+}
+.avisbiere {
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    background: darkgray;
+  
+}
+.tridesavis {
+    font-size: 28px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: darkgray;
+   
+   
+}
+.ongletsavis {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.avispasverifies {
+    width: 100%;
+    background: gray;
+}
+.nometoiles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userstars {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.stars {
+    display: flex;
+    flex-direction:row;
+    justify-content: left;
+    width: 50px;
+    height: 300px;
+    color: black;
+}

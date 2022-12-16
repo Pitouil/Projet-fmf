@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #EAE0DD;
+    --secondary-color: #FEB600;
+    --tertiary-color: #2B1A10;
+}
+
+.footergeneral {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    
+   
+}
+
+.footermiddle {
+    height: 150px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+footer>div{
+    width: 19%;
+    background-color: #EAE0DD;
+
+}
+.logofooter {
+    display: flex;
+    
+    background-image:url("../assets/Logofooter.png");
+    width: 25%;
+    background-size: cover; 
+    
+    
+}
+
+.logoreseauxsociaux {
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+   align-items: center;
+    justify-content: center;
+   flex-direction: column;
+}
+
+
+
+.questionbieres {
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choixbieres {
+    display: flex;
+    justify-content: center;
+}
+
+.mentions {
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts {
+    font-size: 18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+   
+
+   
+
+.reseaux a {    
+     display: inline-block;    
+      height: 40px;    
+       width: 40px;    
+       background: linear-gradient(70deg, rgb(141, 61, 8), rgb(73, 41, 4));
+         margin: 0 10px 10px 0;    
+          text-align: center;     
+          line-height: 40px;    
+           border-radius: 50%;    
+            color: #ffffff;    
+     transition: all 0.5s ease; 
+    }
