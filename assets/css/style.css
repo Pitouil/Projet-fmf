@@ -136,6 +136,12 @@ header .basket a:hover {
   margin: 0;
   height: 100%;
 }
+
+/* css de l'index */
+
+
+
+
 h2{
   text-align: center;
   color: #FEB600;
@@ -290,6 +296,11 @@ afin d'avoir toutes les propriétés générales liées au bg dans la meme propr
   font-size: 40px;
   padding: 2rem;
 }
+
+
+
+
+
 .boutique {
   display: flex;
 }
