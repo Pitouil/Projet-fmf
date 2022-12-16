@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #eae0dd;
+    --secondary-color: #feb600;
+    --tertiary-color: #2b1a10;
+  }
+.bodyCart h1{
+    color:#feb600 ;
+    text-align: center;
+}
