@@ -119,7 +119,7 @@ $tabTest = [1,2,3,4,5,6,7,8,9]
       </div>
       <div class="list_card row">
           <?php foreach ($tabTest as $test){ ?>
-        <div class="carde">
+        <div class="carde col-4 col-md-6 col-sm-12">
           <a href="">
             <div>
               <img src="assets/chouffe.jpg" alt="photo biere" />
