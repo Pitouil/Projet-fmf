@@ -18,6 +18,11 @@
 body {
     background-color: #2b1a10;
 }
+.container-login {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
 .register {
     background-color: #feb600;
     height: 600px;
