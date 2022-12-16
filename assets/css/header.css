@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #eae0dd;
+    --secondary-color: #feb600;
+    --tertiary-color: #2b1a10;
+}
+@font-face{
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel-VariableFont_wght.ttf') format('woff');
+    /* url('#{$font-path}/open-sans/OpenSans-Regular.woff2') format('woff2'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.otf') format('otf'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.ttf') format('ttf'); */
+}
+body {
+    background-color: #2b1a10;
+}
+#ml {
+    background-color: #feb600;
+}
+/* .main-img{
+  display: flex;
+  justify-content: center;
+} */
+.main-img img{
+    width: 100%;
+    display: none;
+}
+/*section{*/
+/*    margin: 60px;*/
+/*}*/
+header {
+    height: 90px;
+    width: 100%;
+    background-color: #feb600;
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    height: 100%;
+
+}
+header .navbar-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header .navbar-main .top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+header .top-navbar .search-bar {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+header .top-navbar .connexion {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+header .navbar-main .top-navbar input {
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+}
+header .navbar-main .top-navbar a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #2b1a10;
+}
+header .navbar-main .top-navbar a:hover {
+    background-color: #2b1a10;
+    color: #feb600;
+}
+header .basket {
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+header .basket a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #2b1a10;
+}
+header .basket .basket-login{
+    display: none;
+}
+header .basket a:hover {
+    background-color: #2b1a10;
+    color: #feb600;
+}
+/* display none barre de recherche et bouton bootstrap */
+.d-flex .form-control {
+    display: none;
+}
+.d-flex button {
+    display: none;
+}
+/* navbar position  */
+.navbar-main .navbar {
+    padding-top: 0rem;
+    padding-bottom: 0;
+    height: 50%;
+    margin-bottom: 0;
+}
+/* couleur menu */
+.collapse .dropdown-menu {
+    background-color: #feb600;
+}
+.navbar .collapse{
+    background-color: #FEB600;
+}
+/* color text bouton menu  */
+.navbar-main .navbar-light .navbar-nav .nav-link {
+    color: #2b1a10;
+}
+.dropdown-item {
+    color: #2b1a10;
+}
+/* hover menu  */
+.navbar-main .navbar-light .navbar-nav .nav-link:hover {
+    background-color: #2b1a10;
+    color: #feb600;
+}
+.dropdown-item:hover {
+    background-color: #2b1a10;
+    color: #feb600;
+}
+.navbar .container-fluid {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+@media screen and (max-width: 1200px) {
+    header .navbar-main .top-navbar input {
+        display: none;
+    }
+    header .navbar-main .top-navbar input{
+        display: none;
+    }
+
+    .d-flex .form-control {
+        display: initial;
+    }
+    .d-flex button {
+        display: initial;
+    }
+    header img{
+        display: none;
+    }
+    header .navbar-main .top-navbar {
+        display: none;
+    }
+    header .basket{
+        width: 70%;
+    }
+    header .basket .basket-login{
+        display: inherit;
+    }
+    .main-img img{
+        width: 100%;
+        display: block;
+    }
+}

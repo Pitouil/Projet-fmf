@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #eae0dd;
+    --secondary-color: #feb600;
+    --tertiary-color: #2b1a10;
+}
+@font-face{
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel-VariableFont_wght.ttf') format('woff');
+    /* url('#{$font-path}/open-sans/OpenSans-Regular.woff2') format('woff2'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.otf') format('otf'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.ttf') format('ttf'); */
+}
+body {
+    background-color: #2b1a10;
+}
+#ml {
+    background-color: #feb600;
+}

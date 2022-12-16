@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #eae0dd;
+    --secondary-color: #feb600;
+    --tertiary-color: #2b1a10;
+}
+@font-face{
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel-VariableFont_wght.ttf') format('woff');
+    /* url('#{$font-path}/open-sans/OpenSans-Regular.woff2') format('woff2'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.otf') format('otf'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.ttf') format('ttf'); */
+}
+body {
+    background-color: #2b1a10;
+}
+.container-login {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.register {
+    background-color: #feb600;
+    height: 600px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 2rem;
+    border-radius: 15%;
+    padding: 0.5rem;
+}
+.register h2 {
+    font-weight: bold;
+    color: #2b1a10;
+}
+.register .register-first-line {
+    display: flex;
+    gap: 2rem;
+}
+.register .register-second-line {
+    display: flex;
+    gap: 1rem;
+}
+
+.register .email-line input {
+    width: 100%;
+}
+.register .adress-line input {
+    width: 100%;
+}
+.register .second-adress-line {
+    display: flex;
+}
+.register .second-adress-line input[name="zip-code"] {
+    width: 55%;
+}
+.register .phone-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register .submit-valid {
+    display: flex;
+    justify-content: end;
+}
+.register .align {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+@media screen and (max-width: 1200px) {
+    .register {
+        background-color: #feb600;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        border-radius: 0%;
+    }
+}

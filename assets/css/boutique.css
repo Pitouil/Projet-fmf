@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #eae0dd;
+    --secondary-color: #feb600;
+    --tertiary-color: #2b1a10;
+}
+@font-face{
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel-VariableFont_wght.ttf') format('woff');
+    /* url('#{$font-path}/open-sans/OpenSans-Regular.woff2') format('woff2'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.otf') format('otf'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.ttf') format('ttf'); */
+}
+body {
+    background-color: #2b1a10;
+}
+.boutique {
+    display: flex;
+}
+.filter {
+    width: 15%;
+}
+.filter form {
+    display: flex;
+    flex-direction: column;
+    color: #feb600;
+}
+.filter form div {
+    display: flex;
+    justify-content: space-between;
+}
+.boutique .list_card {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+.boutique .carde {
+    background-color: #feb600;
+    width: 90%;
+    height: 90%;
+    margin: 1rem 1rem;
+    border: 10px solid #feb600;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+}
+.boutique .carde a {
+    text-decoration: none;
+    color: #2b1a10;
+    text-align: center;
+}
+.boutique .carde a div {
+    width: 100%;
+    height: 70%;
+}
+
+.boutique .carde img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.boutique .carde .bier_name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.boutique .carde .price_bier {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.page {
+    text-align: center;
+}

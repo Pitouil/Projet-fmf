@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #eae0dd;
+    --secondary-color: #feb600;
+    --tertiary-color: #2b1a10;
+}
+@font-face{
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel-VariableFont_wght.ttf') format('woff');
+    /* url('#{$font-path}/open-sans/OpenSans-Regular.woff2') format('woff2'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.otf') format('otf'),
+    url('#{$font-path}/open-sans/OpenSans-Regular.ttf') format('ttf'); */
+}
+body {
+    background-color: #2b1a10;
+}
+.profil h2 {
+    text-align: center;
+    color: #feb600;
+}
+.user {
+    display: flex;
+    height: 400px;
+
+}
+.user .profilPhoto {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user .profilPhoto img {
+    object-fit: contain;
+    width: 50%;
+}
+.user .userDetail {
+    width: 50%;
+    background-color: #feb600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.user .userDetail .name{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+}
+.delivery h2{
+    text-align: center;
+    color: #feb600;
+    background-color: #2b1a10;
+    width: 100%;
+}
+.delivery{
+    background-color: #feb600;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.delivery .table-delivery{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delivery table{
+    width: 100%;
+    padding-top: 1rem;
+}
+.delivery table th{
+    border: 1px solid #2b1a10;
+    height: 40px;
+
+}
+.delivery .delivery-detail{
+    height: 40%;
+    width: 80%;
+    background-color: #eae0dd;
+
+}
