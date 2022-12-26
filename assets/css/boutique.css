@@ -80,11 +80,19 @@ body {
     .boutique .list_card {
         display: grid;
         grid-template: 1fr 1fr  / 1fr 1fr;
-    }
-    @media screen and (max-width: 800px){
+    }}
+
+    @media screen and (max-width: 800px) {
         .boutique .list_card {
             display: grid;
             grid-template: 1fr   / 1fr;
         }
+    .filter{
+        width: 30%;
     }
-}
+    .carde p{
+        font-size: 14px;
+    }
+
+
+    }
