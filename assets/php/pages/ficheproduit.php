@@ -29,7 +29,9 @@ include_once '../partials/_header.php';
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quidem ex nulla quas ducimus repellendus quasi sequi excepturi. Similique ipsum hic quaerat accusantium nemo a asperiores omnis at. Sequi, iure.</p>
         </div>
         </div>
-        
+
+
+    <?php include_once '../partials/_footer.php'?>
 
 
            

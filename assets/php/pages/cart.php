@@ -49,3 +49,5 @@ include_once '../partials/_header.php';
             </div>
           </div>
       </div>
+
+<?php include_once '../partials/_footer.php'?>

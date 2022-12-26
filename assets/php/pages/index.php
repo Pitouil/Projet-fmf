@@ -87,7 +87,6 @@ include_once '../partials/_header.php';
     
   </head>
   <body>
-    
-  </body>
-</html>
+
+  <?php include_once '../partials/_footer.php'?>
 

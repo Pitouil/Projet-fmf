@@ -77,5 +77,4 @@ include_once '../partials/_header.php';
         </div>
       </form>
     </section>
-  </body>
-</html>
+<?php include_once '../partials/_footer.php'?>

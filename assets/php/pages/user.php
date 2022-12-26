@@ -60,5 +60,4 @@ include_once '../partials/_header.php';
         <p>Récapitulatif des tickets</p>
       </div>
     </section>
-  </body>
-</html>
+<?php include_once '../partials/_footer.php'?>

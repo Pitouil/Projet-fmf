@@ -60,5 +60,4 @@ include_once '../partials/_header.php';
         
         <p>Les bases de données sont protégées par les dispositions de la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.</p>
       </section>
-      </body>
-      </html>
+<?php include_once '../partials/_footer.php'?>
