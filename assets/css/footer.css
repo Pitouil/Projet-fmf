@@ -31,9 +31,9 @@ footer>div{
 }
 .logofooter {
     display: flex;
-    
+    align-items: center;
     background-image:url("../../assets/Logofooter.png");
-    width: 25%;
+    width: 30%;
     background-size: cover; 
     
     
@@ -58,10 +58,17 @@ footer>div{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
+
 .choixbieres {
     display: flex;
     justify-content: center;
+    text-align:center;
+    text-decoration: none;
+    color: #2B1A10;
+    cursor: pointer;
 }
 
 .mentions {
@@ -90,11 +97,11 @@ footer>div{
      display: inline-block;    
       height: 40px;    
        width: 40px;    
-       background: linear-gradient(70deg, rgb(141, 61, 8), rgb(73, 41, 4));
+       background: linear-gradient(70deg, rgb(177, 133, 14), rgb(247, 207, 32));
          margin: 0 10px 10px 0;    
           text-align: center;     
           line-height: 40px;    
            border-radius: 50%;    
-            color: #ffffff;    
+            color: rgb(245, 242, 242);   
      transition: all 0.5s ease; 
     }
