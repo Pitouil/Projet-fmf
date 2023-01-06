@@ -8,6 +8,13 @@ class Order
 
     private DateTime $created_at;
 
+    private Delivery $delivery;
+
+    /**
+     * @var Beer[] $beers
+     */
+    private array $beers = [];
+
     /**
      * @return int
      */
@@ -61,6 +68,33 @@ class Order
         $this->created_at = $created_at;
         return $this;
     }
+
+
+    public function getDelivery(): Delivery
+    {
+        return $this->delivery;
+    }
+
+
+    public function setDelivery(Delivery $delivery): Order
+    {
+        $this->delivery = $delivery;
+        return $this;
+    }
+
+
+    public function getBeers(): array
+    {
+        return $this->beers;
+    }
+
+
+    public function addBeers(Beer $beer): Order
+    {
+        $this->beers[] = $beer;
+        return $this;
+    }
+
 
 
 }

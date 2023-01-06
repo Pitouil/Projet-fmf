@@ -23,6 +23,16 @@ class User
     private string $zip_code;
 
     /**
+     * @var Comment[] $comments
+     */
+    private array $comments = [];
+
+    /**
+     * @var Delivery[] $deliverys
+     */
+    private array $deliverys = [];
+
+    /**
      * @return int
      */
     public function getId(): int
@@ -202,6 +212,33 @@ class User
         $this->zip_code = $zip_code;
         return $this;
     }
+
+
+    public function getComments(): array
+    {
+        return $this->comments;
+    }
+
+
+    public function addComments(Comment $comment): User
+    {
+        $this->comments[] = $comment;
+        return $this;
+    }
+
+
+    public function getDeliverys(): array
+    {
+        return $this->deliverys;
+    }
+
+
+    public function addDeliverys(Delivery $delivery): User
+    {
+        $this->deliverys[] = $delivery;
+        return $this;
+    }
+
 
 
 

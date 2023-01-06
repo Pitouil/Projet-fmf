@@ -1,7 +1,6 @@
 <?php
 include_once 'Common.php';
-
-class Brand
+class MainFlavor
 {
     use Common;
 
@@ -17,11 +16,13 @@ class Brand
     }
 
 
-    public function addBeers(Beer $beer): Brand
+    public function addBeers(Beer $beer): Main_flavor
     {
         $this->beers[] = $beer;
         return $this;
     }
+
+
 
 
 }

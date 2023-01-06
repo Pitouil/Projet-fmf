@@ -1,12 +1,17 @@
 <?php
 
-class grade
+class Grade
 {
     private int $id;
 
     private string $name;
 
     private int $star_number;
+
+    /**
+     * @var Comment[] $comments
+     */
+    private array $comments = [];
 
     /**
      * @return int
@@ -63,4 +68,15 @@ class grade
     }
 
 
+    public function getComments(): array
+    {
+        return $this->comments;
+    }
+
+
+    public function addComments(Comment $comment): Grade
+    {
+        $this->comments[] = $comment;
+        return $this;
+    }
 }
