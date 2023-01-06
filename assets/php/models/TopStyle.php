@@ -1,7 +1,6 @@
 <?php
 include_once 'Common.php';
-
-class Brand
+class TopStyle
 {
     use Common;
 
@@ -17,7 +16,7 @@ class Brand
     }
 
 
-    public function addBeers(Beer $beer): Brand
+    public function setBeers(Beer $beer): Top_style
     {
         $this->beers[] = $beer;
         return $this;

@@ -12,6 +12,26 @@ class Beer
 
     private int $is_deleted;
 
+    private Alcohol $alcohol;
+
+    private Brand $brand;
+
+    private Color $color;
+
+    private MainFlavor $mainFlavor;
+
+    private TopStyle $topStyle;
+
+    /**
+     * @var Comment[] $comments
+     */
+    private array $comments = [];
+
+    /**
+     * @var Order[] $orders
+     */
+    private array $orders = [];
+
     /**
      * @return int
      */
@@ -99,6 +119,122 @@ class Beer
     public function setIsDeleted(int $is_deleted): Beer
     {
         $this->is_deleted = $is_deleted;
+        return $this;
+    }
+
+    /**
+     * @return Alcohol
+     */
+    public function getAlcohol(): Alcohol
+    {
+        return $this->alcohol;
+    }
+
+    /**
+     * @param Alcohol $alcohol
+     * @return Beer
+     */
+    public function setAlcohol(Alcohol $alcohol): Beer
+    {
+        $this->alcohol = $alcohol;
+        return $this;
+    }
+
+    /**
+     * @return Brand
+     */
+    public function getBrand(): Brand
+    {
+        return $this->brand;
+    }
+
+    /**
+     * @param Brand $brand
+     * @return Beer
+     */
+    public function setBrand(Brand $brand): Beer
+    {
+        $this->brand = $brand;
+        return $this;
+    }
+
+    /**
+     * @return Color
+     */
+    public function getColor(): Color
+    {
+        return $this->color;
+    }
+
+    /**
+     * @param Color $color
+     * @return Beer
+     */
+    public function setColor(Color $color): Beer
+    {
+        $this->color = $color;
+        return $this;
+    }
+
+    /**
+     * @return MainFlavor
+     */
+    public function getMainFlavor(): MainFlavor
+    {
+        return $this->mainFlavor;
+    }
+
+    /**
+     * @param MainFlavor $mainFlavor
+     * @return Beer
+     */
+    public function setMainFlavor(MainFlavor $mainFlavor): Beer
+    {
+        $this->mainFlavor = $mainFlavor;
+        return $this;
+    }
+
+    /**
+     * @return TopStyle
+     */
+    public function getTopStyle(): TopStyle
+    {
+        return $this->topStyle;
+    }
+
+    /**
+     * @param TopStyle $topStyle
+     * @return Beer
+     */
+    public function setTopStyle(TopStyle $topStyle): Beer
+    {
+        $this->topStyle = $topStyle;
+        return $this;
+    }
+
+
+    public function getComments(): array
+    {
+        return $this->comments;
+    }
+
+
+    public function addComments(Comment $comment): Beer
+    {
+        $this->comments[] = $comment;
+        return $this;
+    }
+
+
+    public function getOrders(): array
+    {
+        return $this->orders;
+    }
+
+
+    public function addOrders(Order $order): Beer
+    {
+        $this->orders[] = $order;
         return $this;
     }
 

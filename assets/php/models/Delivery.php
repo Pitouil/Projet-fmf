@@ -10,6 +10,13 @@ class Delivery
 
     private string $zip_code;
 
+    private User $user;
+
+    /**
+     * @var Order[] $orders
+     */
+    private array $orders = [];
+
     /**
      * @return int
      */
@@ -81,6 +88,33 @@ class Delivery
         $this->zip_code = $zip_code;
         return $this;
     }
+
+
+    public function getUser(): User
+    {
+        return $this->user;
+    }
+
+
+    public function setUser(User $user): Delivery
+    {
+        $this->user = $user;
+        return $this;
+    }
+
+
+    public function getOrders(): array
+    {
+        return $this->orders;
+    }
+
+
+    public function addOrders(Order $order): Delivery
+    {
+        $this->orders[] = $order;
+        return $this;
+    }
+
 
 
 }
