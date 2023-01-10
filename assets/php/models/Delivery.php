@@ -1,5 +1,7 @@
 <?php
 
+namespace App;
+
 class Delivery
 {
     private int $id;

@@ -1,4 +1,6 @@
 <?php
+namespace App;
+
 include_once 'Common.php';
 class TopStyle
 {
@@ -16,7 +18,7 @@ class TopStyle
     }
 
 
-    public function setBeers(Beer $beer): Top_style
+    public function setBeers(Beer $beer): TopStyle
     {
         $this->beers[] = $beer;
         return $this;

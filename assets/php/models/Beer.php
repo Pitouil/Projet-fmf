@@ -1,5 +1,9 @@
 <?php
 
+namespace App;
+
+use DateTime;
+
 class Beer
 {
     private int $id;
