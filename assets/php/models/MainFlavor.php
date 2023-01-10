@@ -1,4 +1,6 @@
 <?php
+namespace App;
+
 include_once 'Common.php';
 class MainFlavor
 {
@@ -16,7 +18,7 @@ class MainFlavor
     }
 
 
-    public function addBeers(Beer $beer): Main_flavor
+    public function addBeers(Beer $beer): MainFlavor
     {
         $this->beers[] = $beer;
         return $this;
