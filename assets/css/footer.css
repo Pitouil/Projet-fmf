@@ -10,7 +10,7 @@
 }
 
 .footergeneral {
-    /*height: 250px;*/
+    height: 200px;
     width: 100%;
     display: flex;
     
@@ -30,15 +30,18 @@ footer>div{
 
 }
 .logofooter {
-    display: flex;
-    align-items: center;
-    background-image:url("../../assets/Logofooter.png");
+    /* display: flex; */
+    /* align-items: center; */
+    /* background-image:url("../../assets/Logofooter.png"); */
     /*width: 30%;*/
-   
-    background-size: cover; 
-    
-    
-}
+   /* background-repeat: no-repeat; */
+   /* background-size:fill;*/
+    /* height: 100%;  */
+    }
+    .logofooter img{
+        object-fit:contain;
+        height: 100%;
+    }
 
 .logoreseauxsociaux {
     font-size: 20px;
@@ -124,4 +127,22 @@ footer>div{
                 
             }
         
+    }
+
+    @media screen and (max-width : 850px) {
+        .footergeneral {
+            /*height: 250px;*/
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            }
+            .logofooter {
+                text-align: center;
+               height: 200px;
+                /*width: auto;*/
+                background-size:cover;
+                /*background-repeat: no-repeat;*/
+                
+            }
     }
