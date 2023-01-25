@@ -1,7 +1,7 @@
 <?php
 namespace App;
 
-include_once 'Common.php';
+
 class TopStyle
 {
     use Common;
