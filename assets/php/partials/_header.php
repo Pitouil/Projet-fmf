@@ -43,8 +43,9 @@
                 />
 
             </div>
-            <div class="connexion collapse two-border">
-                <a href="#">Connexion</a>
+            <div class="connexion collapse ">
+                <a class="two-border" href="../pages/login.php">Connexion</a>
+                <a class="two-border" href="../pages/register.php">Inscription</a>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -233,7 +234,10 @@
         </nav>
     </div>
     <div class="basket">
-        <a href="" class="basket-login">Connexion</a>
+        <div>
+            <a href="../pages/login.php" class="basket-login border-r">Connexion</a>
+            <a href="../pages/register.php" class="basket-login border-l">Inscription</a>
+        </div>
         <a href="#"><i class="fa-solid fa-basket-shopping"></i>Panier</a>
     </div>
 </header>

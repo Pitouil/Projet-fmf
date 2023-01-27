@@ -18,6 +18,7 @@
 body {
     background-color: #2b1a10;
     font-family: Alkalami;
+
 }
 h2{
     font-family: Cinzel;
@@ -37,13 +38,19 @@ header {
     background-color: #feb600;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top:0;
+    border-bottom: 4px solid #2b1a10;
+
 }
 header .two-border{
     border-right: 1px solid #2b1a10;
     border-left: 1px solid #2b1a10;
+    border-top: 1px solid #2b1a10;
 }
 header .border-right{
     border-right: 1px solid #2b1a10;
+    border-top: 1px solid #2b1a10;
 }
 header img {
     height: 100%;
@@ -119,7 +126,6 @@ header .basket i{
 }
 header .basket .basket-login{
     display: none;
-    border-right: 1px solid #2b1a10;
 }
 header .basket a:hover {
     background-color: #2b1a10;
@@ -157,6 +163,7 @@ header .basket a:hover {
 .navbar-main .navbar-light .navbar-nav .nav-link:hover {
     background-color: #2b1a10;
     color: #feb600;
+    border-bottom: 4px solid #2b1a10;
 }
 .dropdown-item:hover {
     background-color: #2b1a10;
@@ -198,12 +205,22 @@ header .basket a:hover {
         display: block;
     }
     header .two-border{
-        border-right: none;
-        border-left: none;
-        border-bottom:1px solid #2b1a10 ;
+        border: none;
     }
     header .border-right{
-        border-right: none;
-        border-bottom:1px solid #2b1a10 ;
+        border: none;
+    }
+    .border-r{
+        border-right: 1px solid #2b1a10;
+        border-bottom: 1px solid #2b1a10;
+        border-left: 1px solid #2b1a10;
+    }
+    .border-l{
+        /*border-top: 1px solid #2b1a10;*/
+        border-left: 1px solid #2b1a10;
+        border-right: 1px solid #2b1a10;
+    }
+    .navbar-main .navbar-light .navbar-nav .nav-link:hover{
+        border: none;
     }
 }
