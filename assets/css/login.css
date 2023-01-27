@@ -26,13 +26,13 @@ body {
 .login {
     background-color: #feb600;
     height: 500px;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    border-radius: 15%;
+    border-radius: 60px;
 }
 .login h2 {
     font-weight: bold;
@@ -43,18 +43,20 @@ body {
     flex-direction: column;
     width: 50%;
 }
-.login div input {
-    border-radius: 10px;
-}
+
 .login div label {
     align-self: center;
     font-weight: bold;
 }
-.login div input[type="text"] {
+
+.login div input {
     height: 40px;
-}
-.login div input[type="password"] {
-    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    width: 90%;
+    align-self: center;
 }
 .login div input[type="submit"] {
     padding: 0 1rem;
@@ -65,26 +67,56 @@ body {
 .login div a {
     align-self: center;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1480px) {
     .container-login{
-        margin: 0px;
-        width: 100%;
+        margin: 100px ;
     }
     .login {
-        background-color: #feb600;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        border-radius: 0%;
+        width: 60%;
+    }
+    .login div input{
+        width: 90%;
+        align-self: center;
     }
     .login div input[type="submit"] {
         padding: 0 1rem;
-        width: 50%;
+        width: 60%;
         align-self: center;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 990px){
+    .container-login {
+        margin: 40px 20px 40px 20px;
+    }
+    .login div input{
+        width: 90%;
+        align-self: center;
+    }
+}
+@media screen and (max-width: 576px) {
+    .container-login {
+        margin: 40px 5px 40px 5px;
+
+    }
+
+    .login {
+        width: 90%;
+    }
+
+    .login div {
+
+    }
+
+    .login div input {
+        width: 90%;
+        align-self: center;
+    }
+
+    .login div input[type="submit"] {
+        padding: 0 1rem;
+        width: 70%;
+        align-self: center;
+        font-size: 0.8rem;
     }
 }
