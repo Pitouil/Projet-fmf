@@ -1,10 +1,15 @@
 <?php
 
-include_once 'UserRepositery';
+
+namespace App\repositery;
+
+use PDO;
 
 abstract class MainRepositery
 {
-    private string $url = 'mysql:host=127.0.0.1:3306;dbname=les_brasseurs_auvergnats';
+    protected PDO $pdo;
+
+    private string $url = 'mysql:host=127.0.0.1:3306;dbname=biere';
     private string $user = 'root';
     private string $pwd = '';
     private string $lowerClassName;

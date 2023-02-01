@@ -29,15 +29,6 @@ footer>div{
     background-color: #EAE0DD;
 
 }
-.logofooter {
-    /* display: flex; */
-    /* align-items: center; */
-    /* background-image:url("../../assets/Logofooter.png"); */
-    /*width: 30%;*/
-   /* background-repeat: no-repeat; */
-   /* background-size:fill;*/
-    /* height: 100%;  */
-    }
     .logofooter img{
         object-fit:contain;
         height: 100%;
@@ -118,8 +109,7 @@ footer>div{
 
             }
             .logofooter {
-                display: flex;
-                align-items: center;
+                text-align: center;
                height: 200px;
                 /*width: auto;*/
                 background-size:cover;
@@ -140,9 +130,6 @@ footer>div{
             .logofooter {
                 text-align: center;
                height: 200px;
-                /*width: auto;*/
                 background-size:cover;
-                /*background-repeat: no-repeat;*/
-                
             }
     }

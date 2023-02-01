@@ -17,30 +17,45 @@
 }
 body {
     background-color: #2b1a10;
+    font-family: Alkalami;
+
+}
+h2{
+    font-family: Cinzel;
 }
 #ml {
     background-color: #feb600;
 }
-/* .main-img{
-  display: flex;
-  justify-content: center;
-} */
 .main-img img{
     width: 100%;
     display: none;
+
 }
-/*section{*/
-/*    margin: 60px;*/
-/*}*/
+
 header {
     height: 90px;
     width: 100%;
     background-color: #feb600;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top:0;
+    border-bottom: 4px solid #2b1a10;
+
+}
+header .two-border{
+    border-right: 1px solid #2b1a10;
+    border-left: 1px solid #2b1a10;
+    border-top: 1px solid #2b1a10;
+}
+header .border-right{
+    border-right: 1px solid #2b1a10;
+    border-top: 1px solid #2b1a10;
 }
 header img {
     height: 100%;
+    padding: 0.5rem;
+    background-color: #272C33;
 
 }
 header .navbar-main {
@@ -63,7 +78,7 @@ header .top-navbar .search-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 1rem;
+    padding: 0 1rem;
 }
 header .top-navbar .connexion {
     width: 20%;
@@ -75,6 +90,9 @@ header .navbar-main .top-navbar input {
     height: 30px;
     width: 100%;
     border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
 }
 header .navbar-main .top-navbar a {
     width: 100%;
@@ -96,11 +114,15 @@ header .basket {
 header .basket a {
     height: 100%;
     width: 100%;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: #2b1a10;
+}
+header .basket i{
+    padding: 0.5rem;
 }
 header .basket .basket-login{
     display: none;
@@ -141,6 +163,7 @@ header .basket a:hover {
 .navbar-main .navbar-light .navbar-nav .nav-link:hover {
     background-color: #2b1a10;
     color: #feb600;
+    border-bottom: 4px solid #2b1a10;
 }
 .dropdown-item:hover {
     background-color: #2b1a10;
@@ -180,5 +203,24 @@ header .basket a:hover {
     .main-img img{
         width: 100%;
         display: block;
+    }
+    header .two-border{
+        border: none;
+    }
+    header .border-right{
+        border: none;
+    }
+    .border-r{
+        border-right: 1px solid #2b1a10;
+        border-bottom: 1px solid #2b1a10;
+        border-left: 1px solid #2b1a10;
+    }
+    .border-l{
+        /*border-top: 1px solid #2b1a10;*/
+        border-left: 1px solid #2b1a10;
+        border-right: 1px solid #2b1a10;
+    }
+    .navbar-main .navbar-light .navbar-nav .nav-link:hover{
+        border: none;
     }
 }
