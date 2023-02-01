@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App;
+namespace App\repositery;
 
 use PDO;
 
@@ -9,7 +9,7 @@ abstract class MainRepositery
 {
     protected PDO $pdo;
 
-    private string $url = 'mysql:host=127.0.0.1:3306;dbname=les_brasseurs_auvergnats';
+    private string $url = 'mysql:host=127.0.0.1:3306;dbname=biere';
     private string $user = 'root';
     private string $pwd = '';
     private string $lowerClassName;

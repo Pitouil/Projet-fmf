@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,8 +45,14 @@
 
             </div>
             <div class="connexion collapse ">
+                <?php
+                if ( empty($_SESSION)){ ?>
                 <a class="two-border" href="../pages/login.php">Connexion</a>
                 <a class="two-border" href="../pages/register.php">Inscription</a>
+                <?php }else{ ?>
+                <a class="two-border" href="../pages/logout.php">Deconnexion</a>
+                <a class="two-border" href="../pages/user.php">Profil</a>
+                <?php } ?>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -235,8 +242,13 @@
     </div>
     <div class="basket">
         <div>
+            <?php if ( empty($_SESSION)){ ?>
             <a href="../pages/login.php" class="basket-login border-r">Connexion</a>
             <a href="../pages/register.php" class="basket-login border-l">Inscription</a>
+            <?php }else{ ?>
+            <a href="../pages/logout.php" class="basket-login border-r">Deconnexion</a>
+            <a href="../pages/user.php" class="basket-login border-l">Profil</a>
+            <?php } ?>
         </div>
         <a href="#"><i class="fa-solid fa-basket-shopping"></i>Panier</a>
     </div>
