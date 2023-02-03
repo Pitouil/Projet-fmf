@@ -118,13 +118,12 @@ footer>div{
 
             }
             .logofooter {
-                display: flex;
-                align-items: center;
+               
                height: 200px;
                 /*width: auto;*/
                 background-size:cover;
                 /*background-repeat: no-repeat;*/
-                
+                text-align: center; 
             }
         
     }
