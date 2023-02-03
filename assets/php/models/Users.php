@@ -10,9 +10,9 @@ class Users
 {
     private int $id;
 
-    private ?string $firstName = null;
+    private ?string $first_name = null;
 
-    private ?string $lastName = null;
+    private ?string $last_name = null;
 
 //    private ?string $phoneNumber = null;
 
@@ -30,7 +30,7 @@ class Users
 
     private ?string $street = null;
 
-    private ?string $zipCode = null;
+    private ?string $zip_code = null;
 
     /**
      * @var Comment[] $comments
@@ -59,28 +59,28 @@ public function setId(int $id): Users
  */
 public function getFirstName(): string
 {
-    return $this->firstName;
+    return $this->first_name;
 }/**
- * @param string $firstName
+ * @param string $first_name
  * @return Users
  */
-public function setFirstName(string $firstName): Users
+public function setFirstName(string $first_name): Users
 {
-    $this->firstName = $firstName;
+    $this->first_name = $first_name;
     return $this;
 }/**
  * @return string
  */
 public function getLastName(): string
 {
-    return $this->lastName;
+    return $this->last_name;
 }/**
- * @param string $lastName
+ * @param string $last_name
  * @return Users
  */
-public function setLastName(string $lastName): Users
+public function setLastName(string $last_name): Users
 {
-    $this->lastName = $lastName;
+    $this->last_name = $last_name;
     return $this;
 }/**
  * @return string
@@ -186,14 +186,14 @@ public function setStreet(string $street): Users
  */
 public function getZipCode(): string
 {
-    return $this->zipCode;
+    return $this->zip_code;
 }/**
- * @param string $zipCode
+ * @param string $zip_code
  * @return Users
  */
-public function setZipCode(string $zipCode): Users
+public function setZipCode(string $zip_code): Users
 {
-    $this->zipCode = $zipCode;
+    $this->zip_code = $zip_code;
     return $this;
 }
 
