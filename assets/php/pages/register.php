@@ -35,19 +35,25 @@ if (isset($_POST) && !empty($_POST)) {
                                             $dateTime = new DateTime();
                                             $dateString = $dateTime->format('Y-m-d H:i:s');
                                             $newUser->setCreatedAt($dateString);
-                                            if ($_POST['mention'] === 'on'){
+                                            if (isset($_POST['mention'])){
                                                 $_POST['mention'] = true;
+                                            }else{
+                                                $_POST['mention'] = false;
                                             }
                                             $newUser->setMention($_POST['mention']);
-                                            if ($_POST['newsletter'] === 'on'){
-                                                $_POST['newsletter'] = true;
-                                            }
+                                                if (isset($_POST['newsletter'])){
+                                                    $_POST['newsletter'] = true;
+                                                }else{
+                                                    $_POST['newsletter'] = false;
+                                                }
                                             $newUser->setNewsletter($_POST['newsletter']);
-                                            if ($_POST['promotion'] === 'on'){
-                                                $_POST['promotion'] = true;
-                                            }
+                                                if (isset($_POST['promotion'])){
+                                                    $_POST['promotion'] = true;
+                                                }else{
+                                                    $_POST['promotion'] = false;
+                                                }
                                             $newUser->setPromotion($_POST['promotion']);
-                                            dump($newUser);
+
                                             $userRepositery->addUser($newUser);
                                             }else{
                                                 $mentionMessage = 'Cocher la case pour accepter les mentions légales';
@@ -188,6 +194,6 @@ include_once '../partials/_header.php';
 </section>
 <?php
 
-dump($_POST);
+
 
 include_once '../partials/_footer.php' ?>
