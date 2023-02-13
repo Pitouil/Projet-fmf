@@ -55,6 +55,7 @@ if (isset($_POST) && !empty($_POST)) {
                                             $newUser->setPromotion($_POST['promotion']);
 
                                             $userRepositery->addUser($newUser);
+                                            header('location: ./login.php');
                                             }else{
                                                 $mentionMessage = 'Cocher la case pour accepter les mentions légales';
                                             }
