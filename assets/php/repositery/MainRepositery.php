@@ -11,8 +11,8 @@ abstract class MainRepositery
 {
     protected PDO $pdo;
 
-  //  private string $url = 'mysql:host=127.0.0.1:3306;dbname=projet_fmf';
-    private string $url = 'mysql:host=127.0.0.1:3306;dbname=projet';
+    private string $url = 'mysql:host=127.0.0.1:3306;dbname=projet_fmf';
+  //  private string $url = 'mysql:host=127.0.0.1:3306;dbname=projet';
     private string $user = 'root';
     private string $pwd = '';
     private string $lowerClassName;
