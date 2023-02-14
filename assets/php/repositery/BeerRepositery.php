@@ -2,6 +2,8 @@
 
 namespace App;
 
+use App\repositery\MainRepositery;
+
 class BeerRepositery extends MainRepositery
 {
     protected string $class;
@@ -12,3 +14,5 @@ class BeerRepositery extends MainRepositery
         parent::__construct(Beer::class);
     }
 }
+
+

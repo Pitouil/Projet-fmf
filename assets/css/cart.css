@@ -57,20 +57,20 @@ section >article:last-child {
     border-bottom-left-radius: 20px ;
 }
 
-}
+
 .margin-middle-card{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .main-cart {
-    background-color: #2c3034;
+    background-color: inherit;
     width: 100vh;
 }
 .sticky-payment-array{
     background-color:#feb600 ;
-    width: 50vh;
+    width: 20vw;
     text-align: center;
     position: sticky;
-    top: 10px;
+    top: 40vh;
     margin-left: 15px;
     height: min-content;
     padding: 10px;
@@ -102,7 +102,7 @@ section >article:last-child {
     }
     .sticky-payment-array{
         bottom: 0;
-        top: initial;
+        top:40vh;
         width: 100%;
         margin-left:0;
         border: 2px solid black;
