@@ -1,246 +1,152 @@
 <?php
 
-namespace App;
+namespace App\models;
 
 use DateTime;
 
 class Beer
 {
-    private int $id;
+    private ?int $id = null;
 
-    private string $name;
+    private ?string $top_style = null;
 
-    private  float $price;
+    private ?string $color =null;
 
-    private DateTime  $created_at;
+    private ?string  $main_flavor = null;
 
-    private int $is_deleted;
+    private ?int $alcohol = null;
 
-    private Alcohol $alcohol;
+    private ?int $contenance = null;
 
-    private Brand $brand;
-
-    private Color $color;
-
-    private MainFlavor $mainFlavor;
-
-    private TopStyle $topStyle;
+    private Products $products;
 
     /**
-     * @var Comment[] $comments
+     * @return int|null
      */
-    private array $comments = [];
-
-    /**
-     * @var Order[] $orders
-     */
-    private array $orders = [];
-
-    /**
-     * @return int
-     */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
 
     /**
-     * @param int $id
+     * @param int|null $id
      * @return Beer
      */
-    public function setId(int $id): Beer
+    public function setId(?int $id): Beer
     {
         $this->id = $id;
         return $this;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getName(): string
+    public function getTopStyle(): ?string
     {
-        return $this->name;
+        return $this->top_style;
     }
 
     /**
-     * @param string $name
+     * @param string|null $top_style
      * @return Beer
      */
-    public function setName(string $name): Beer
+    public function setTopStyle(?string $top_style): Beer
     {
-        $this->name = $name;
+        $this->top_style = $top_style;
         return $this;
     }
 
     /**
-     * @return float
+     * @return string|null
      */
-    public function getPrice(): float
-    {
-        return $this->price;
-    }
-
-    /**
-     * @param float $price
-     * @return Beer
-     */
-    public function setPrice(float $price): Beer
-    {
-        $this->price = $price;
-        return $this;
-    }
-
-    /**
-     * @return DateTime
-     */
-    public function getCreatedAt(): DateTime
-    {
-        return $this->created_at;
-    }
-
-    /**
-     * @param DateTime $created_at
-     * @return Beer
-     */
-    public function setCreatedAt(DateTime $created_at): Beer
-    {
-        $this->created_at = $created_at;
-        return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function getIsDeleted(): int
-    {
-        return $this->is_deleted;
-    }
-
-    /**
-     * @param int $is_deleted
-     * @return Beer
-     */
-    public function setIsDeleted(int $is_deleted): Beer
-    {
-        $this->is_deleted = $is_deleted;
-        return $this;
-    }
-
-    /**
-     * @return Alcohol
-     */
-    public function getAlcohol(): Alcohol
-    {
-        return $this->alcohol;
-    }
-
-    /**
-     * @param Alcohol $alcohol
-     * @return Beer
-     */
-    public function setAlcohol(Alcohol $alcohol): Beer
-    {
-        $this->alcohol = $alcohol;
-        return $this;
-    }
-
-    /**
-     * @return Brand
-     */
-    public function getBrand(): Brand
-    {
-        return $this->brand;
-    }
-
-    /**
-     * @param Brand $brand
-     * @return Beer
-     */
-    public function setBrand(Brand $brand): Beer
-    {
-        $this->brand = $brand;
-        return $this;
-    }
-
-    /**
-     * @return Color
-     */
-    public function getColor(): Color
+    public function getColor(): ?string
     {
         return $this->color;
     }
 
     /**
-     * @param Color $color
+     * @param string|null $color
      * @return Beer
      */
-    public function setColor(Color $color): Beer
+    public function setColor(?string $color): Beer
     {
         $this->color = $color;
         return $this;
     }
 
     /**
-     * @return MainFlavor
+     * @return string|null
      */
-    public function getMainFlavor(): MainFlavor
+    public function getMainFlavor(): ?string
     {
-        return $this->mainFlavor;
+        return $this->main_flavor;
     }
 
     /**
-     * @param MainFlavor $mainFlavor
+     * @param string|null $main_flavor
      * @return Beer
      */
-    public function setMainFlavor(MainFlavor $mainFlavor): Beer
+    public function setMainFlavor(?string $main_flavor): Beer
     {
-        $this->mainFlavor = $mainFlavor;
+        $this->main_flavor = $main_flavor;
         return $this;
     }
 
     /**
-     * @return TopStyle
+     * @return int|null
      */
-    public function getTopStyle(): TopStyle
+    public function getAlcohol(): ?int
     {
-        return $this->topStyle;
+        return $this->alcohol;
     }
 
     /**
-     * @param TopStyle $topStyle
+     * @param int|null $alcohol
      * @return Beer
      */
-    public function setTopStyle(TopStyle $topStyle): Beer
+    public function setAlcohol(?int $alcohol): Beer
     {
-        $this->topStyle = $topStyle;
+        $this->alcohol = $alcohol;
+        return $this;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getContenance(): ?int
+    {
+        return $this->contenance;
+    }
+
+    /**
+     * @param int|null $contenance
+     * @return Beer
+     */
+    public function setContenance(?int $contenance): Beer
+    {
+        $this->contenance = $contenance;
+        return $this;
+    }
+
+    /**
+     * @return Products
+     */
+    public function getProducts(): Products
+    {
+        return $this->products;
+    }
+
+    /**
+     * @param Products $products
+     * @return Beer
+     */
+    public function setProducts(Products $products): Beer
+    {
+        $this->products = $products;
         return $this;
     }
 
 
-    public function getComments(): array
-    {
-        return $this->comments;
-    }
-
-
-    public function addComments(Comment $comment): Beer
-    {
-        $this->comments[] = $comment;
-        return $this;
-    }
-
-
-    public function getOrders(): array
-    {
-        return $this->orders;
-    }
-
-
-    public function addOrders(Order $order): Beer
-    {
-        $this->orders[] = $order;
-        return $this;
-    }
 
 
 }

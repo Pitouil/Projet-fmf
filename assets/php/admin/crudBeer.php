@@ -1,10 +1,12 @@
 <?php
+require '../../../vendor/autoload.php';
 $linkCss = '<link rel="stylesheet" href="../../css/crudBeer.css" />';
 include_once '../partials/_header.php';
 $topStyles = ['IPA', 'Lambic', 'Pils', 'Saison', 'Sour', 'Stout', 'Triple', 'Weisbier', 'Witbier'];
 $colors = ['Ambree', 'Brune', 'Blonde', 'Blanche', 'Noir', 'Rouge', 'Autre'];
 $mainFlavors = ['Douces & Fruitee', 'Fumee', 'Houblonnee', 'Légere & Desalterante', 'Riche & Epicee', 'Sucree & Parfumee', 'Vive & Acidulee'];
 $alcohols = ['Sans alcool (<1.2%)', 'Moins de 5%', '5% a 8%', 'Plus de 8%'];
+
 ?>
 <div class="crud">
     <h1>Ajout de bières</h1>
@@ -49,7 +51,7 @@ $alcohols = ['Sans alcool (<1.2%)', 'Moins de 5%', '5% a 8%', 'Plus de 8%'];
         </div>
         <div>
             <label for="contenance">Contenance</label>
-            <input type="text" id="contenance" name="contenance">
+            <input type="number" id="contenance" name="contenance">
             <label for="contenance">cl</label>
         </div>
         <div>
@@ -74,4 +76,5 @@ $alcohols = ['Sans alcool (<1.2%)', 'Moins de 5%', '5% a 8%', 'Plus de 8%'];
 <?php
 
 
-include_once '../partials/_footer.php' ?>
+include_once '../partials/_footer.php' ;
+dump($_POST);?>

@@ -1,30 +1,77 @@
 <?php
-namespace App;
+namespace App\models;
 
 
 
 
 class Brand
 {
-    use Common;
+    private int $id;
+
+    private string $name;
 
     /**
-     * @var Beer[] $beers
+     * @var Products[] $products
      */
-    private array $beers = [];
+    private array $products = [];
 
-
-    public function getBeers(): array
+    /**
+     * @return int
+     */
+    public function getId(): int
     {
-        return $this->beers;
+        return $this->id;
     }
 
-
-    public function addBeers(Beer $beer): Brand
+    /**
+     * @param int $id
+     * @return Brand
+     */
+    public function setId(int $id): Brand
     {
-        $this->beers[] = $beer;
+        $this->id = $id;
         return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     * @return Brand
+     */
+    public function setName(string $name): Brand
+    {
+        $this->name = $name;
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getProducts(): array
+    {
+        return $this->products;
+    }
+
+    /**
+     * @param array $products
+     * @return Brand
+     */
+    public function setProducts(Products $product): Brand
+    {
+        $this->products[] = $product;
+        return $this;
+    }
+
+
+
+
 
 
 }
