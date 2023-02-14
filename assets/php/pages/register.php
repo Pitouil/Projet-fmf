@@ -20,43 +20,43 @@ if (isset($_POST) && !empty($_POST)) {
                                 if (!empty($_POST['zipCode'])) {
                                     if (!empty($_POST['city'])) {
                                         if (!empty($_POST['phoneNumber'])) {
-                                            if (!empty($_POST['mention'])){
-                                            $newUser = new User();
-                                            $newUser->setLastName($_POST['lastName']);
-                                            $newUser->setFirstName($_POST['firstName']);
-                                            $newUser->setPasswords(password_hash($_POST['passwords'], PASSWORD_DEFAULT));
-                                            $newUser->setCity($_POST['city']);
-                                            $newUser->setZipCode($_POST['zipCode']);
-                                            $newUser->setStreet($_POST['street']);
-                                            $newUser->setEmail($_POST['email']);
-                                            $newUser->setPhones($_POST['phoneNumber']);
-                                            $newUser->setGender($_POST['gender']);
-                                            $newUser->setDateOfbirth($_POST['dateOfBirth']);
-                                            $dateTime = new DateTime();
-                                            $dateString = $dateTime->format('Y-m-d H:i:s');
-                                            $newUser->setCreatedAt($dateString);
-                                            if (isset($_POST['mention'])){
-                                                $_POST['mention'] = true;
-                                            }else{
-                                                $_POST['mention'] = false;
-                                            }
-                                            $newUser->setMention($_POST['mention']);
-                                                if (isset($_POST['newsletter'])){
+                                            if (!empty($_POST['mention'])) {
+                                                $newUser = new User();
+                                                $newUser->setLastName($_POST['lastName']);
+                                                $newUser->setFirstName($_POST['firstName']);
+                                                $newUser->setPasswords(password_hash($_POST['passwords'], PASSWORD_DEFAULT));
+                                                $newUser->setCity($_POST['city']);
+                                                $newUser->setZipCode($_POST['zipCode']);
+                                                $newUser->setStreet($_POST['street']);
+                                                $newUser->setEmail($_POST['email']);
+                                                $newUser->setPhones($_POST['phoneNumber']);
+                                                $newUser->setGender($_POST['gender']);
+                                                $newUser->setDateOfbirth($_POST['dateOfBirth']);
+                                                $dateTime = new DateTime();
+                                                $dateString = $dateTime->format('Y-m-d H:i:s');
+                                                $newUser->setCreatedAt($dateString);
+                                                if (isset($_POST['mention'])) {
+                                                    $_POST['mention'] = true;
+                                                } else {
+                                                    $_POST['mention'] = false;
+                                                }
+                                                $newUser->setMention($_POST['mention']);
+                                                if (isset($_POST['newsletter'])) {
                                                     $_POST['newsletter'] = true;
-                                                }else{
+                                                } else {
                                                     $_POST['newsletter'] = false;
                                                 }
-                                            $newUser->setNewsletter($_POST['newsletter']);
-                                                if (isset($_POST['promotion'])){
+                                                $newUser->setNewsletter($_POST['newsletter']);
+                                                if (isset($_POST['promotion'])) {
                                                     $_POST['promotion'] = true;
-                                                }else{
+                                                } else {
                                                     $_POST['promotion'] = false;
                                                 }
-                                            $newUser->setPromotion($_POST['promotion']);
+                                                $newUser->setPromotion($_POST['promotion']);
 
-                                            $userRepositery->addUser($newUser);
-                                            header('location: ./login.php');
-                                            }else{
+                                                $userRepositery->addUser($newUser);
+                                                header('location: ./login.php');
+                                            } else {
                                                 $mentionMessage = 'Cocher la case pour accepter les mentions légales';
                                             }
                                         } else {
@@ -117,7 +117,7 @@ include_once '../partials/_header.php';
                     <p class="text-center red-alert"><?= isset($genreMessage) ? $genreMessage : '' ?> </p>
                 </div>
                 <div class="date-register">
-                    <label  for="date-of-birth">Date de naissance :</label>
+                    <label for="date-of-birth">Date de naissance :</label>
                     <input type="date" name="dateOfBirth" id="date-of-birth" class="w-100 date-register" required/>
                     <p class="text-center red-alert"><?= isset($dateMessage) ? $dateMessage : '' ?> </p>
                 </div>
@@ -194,7 +194,6 @@ include_once '../partials/_header.php';
     </form>
 </section>
 <?php
-
 
 
 include_once '../partials/_footer.php' ?>
