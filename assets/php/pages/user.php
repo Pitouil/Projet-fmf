@@ -1,4 +1,14 @@
 <?php
+session_start();
+require '../../../vendor/autoload.php';
+
+use App\repositery\UserRepositery;
+
+$userRepositery = new UserRepositery();
+$user = $userRepositery->findOneBy($_SESSION['user']);
+//dump($user);
+
+
 $linkCss = '<link rel="stylesheet" href="../../css/user.css" />';
 include_once '../partials/_header.php';
 ?>
@@ -10,16 +20,16 @@ include_once '../partials/_header.php';
         </div>
         <div class="userDetail">
             <div class="name">
-                <p>NOM:</p>
-                <p>Prénom:</p>
+                <p><?= $user->getLastName() ?></p>
+                <p><?= $user->getFirstName() ?></p>
             </div>
             <div>
-                <p>Date de naissance:</p>
-                <p>Téléphone:</p>
+                <p>Née le: <?= $user->getDateOfBirth() ?></p>
+                <p><?= $user->getPhones() ?></p>
             </div>
             <div>
-                <p>Mail:</p>
-                <p>Adresse:</p>
+                <p><?= $user->getEmail() ?></p>
+                <p><?= $user->getStreet().', '.$user->getZipCode().', '.$user->getCity().'.' ?></p>
             </div>
         </div>
     </div>

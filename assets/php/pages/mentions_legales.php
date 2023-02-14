@@ -1,4 +1,5 @@
 <?php
+session_start();
 $linkCss = '<link rel="stylesheet" href="../../css/mentions_legales.css" />';
 include_once '../partials/_header.php';
 ?>

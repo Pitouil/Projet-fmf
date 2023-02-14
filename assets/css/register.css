@@ -116,6 +116,10 @@ input{
     flex-direction: column;
     gap: 0.5rem;
 }
+.red-alert{
+    color: red;
+    font-size: 20px;
+}
 
 @media screen and (max-width: 1480px) {
     .container-login {
@@ -128,6 +132,9 @@ input{
         height: 80%;
         width: 70%;
 
+    }
+    .register .register-first-line .date-register{
+        text-align: center;
     }
 
     .register .register-second-line {
