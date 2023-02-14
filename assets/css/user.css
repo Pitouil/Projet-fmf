@@ -58,6 +58,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+.user .userDetail div p{
+    align-self: center;
+}
 .delivery h2{
     text-align: center;
     color: #feb600;
