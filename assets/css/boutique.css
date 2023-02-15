@@ -18,11 +18,17 @@
 body {
     background-color: #2b1a10;
 }
+button{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #feb600;
+}
 .boutique {
     display: flex;
 }
 .filter {
-    width: 15%;
+    width:15%;
+    padding: 1rem;
 }
 .filter form {
     display: flex;

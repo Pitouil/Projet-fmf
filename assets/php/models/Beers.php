@@ -4,7 +4,7 @@ namespace App\models;
 
 use DateTime;
 
-class Beer
+class Beers extends Products
 {
     private ?int $id = null;
 
@@ -30,9 +30,9 @@ class Beer
 
     /**
      * @param int|null $id
-     * @return Beer
+     * @return Beers
      */
-    public function setId(?int $id): Beer
+    public function setId(?int $id): Beers
     {
         $this->id = $id;
         return $this;
@@ -48,9 +48,9 @@ class Beer
 
     /**
      * @param string|null $top_style
-     * @return Beer
+     * @return Beers
      */
-    public function setTopStyle(?string $top_style): Beer
+    public function setTopStyle(?string $top_style): Beers
     {
         $this->top_style = $top_style;
         return $this;
@@ -66,9 +66,9 @@ class Beer
 
     /**
      * @param string|null $color
-     * @return Beer
+     * @return Beers
      */
-    public function setColor(?string $color): Beer
+    public function setColor(?string $color): Beers
     {
         $this->color = $color;
         return $this;
@@ -84,9 +84,9 @@ class Beer
 
     /**
      * @param string|null $main_flavor
-     * @return Beer
+     * @return Beers
      */
-    public function setMainFlavor(?string $main_flavor): Beer
+    public function setMainFlavor(?string $main_flavor): Beers
     {
         $this->main_flavor = $main_flavor;
         return $this;
@@ -102,9 +102,9 @@ class Beer
 
     /**
      * @param int|null $alcohol
-     * @return Beer
+     * @return Beers
      */
-    public function setAlcohol(?int $alcohol): Beer
+    public function setAlcohol(?int $alcohol): Beers
     {
         $this->alcohol = $alcohol;
         return $this;
@@ -120,9 +120,9 @@ class Beer
 
     /**
      * @param int|null $contenance
-     * @return Beer
+     * @return Beers
      */
-    public function setContenance(?int $contenance): Beer
+    public function setContenance(?int $contenance): Beers
     {
         $this->contenance = $contenance;
         return $this;
@@ -138,9 +138,9 @@ class Beer
 
     /**
      * @param Products $products
-     * @return Beer
+     * @return Beers
      */
-    public function setProducts(Products $products): Beer
+    public function setProducts(Products $products): Beers
     {
         $this->products = $products;
         return $this;

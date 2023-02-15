@@ -2,7 +2,7 @@
 
 namespace App\models;
 
-class Products
+ class Products
 {
     private ?int $id = null;
 
@@ -14,7 +14,7 @@ class Products
 
     private ?string $is_deleted=null;
 
-    private Beer $beer;
+    private Beers $beer;
 
     private Brand $brand;
 
@@ -109,18 +109,18 @@ class Products
     }
 
     /**
-     * @return Beer
+     * @return Beers
      */
-    public function getBeer(): Beer
+    public function getBeer(): Beers
     {
         return $this->beer;
     }
 
     /**
-     * @param Beer $beer
+     * @param Beers $beer
      * @return Products
      */
-    public function setBeer(Beer $beer): Products
+    public function setBeer(Beers $beer): Products
     {
         $this->beer = $beer;
         return $this;

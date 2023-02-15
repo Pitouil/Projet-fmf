@@ -1,7 +1,8 @@
 <?php
 
-namespace App;
+namespace App\repositery;
 
+use App\models\Beers;
 use App\repositery\MainRepositery;
 
 class BeerRepositery extends MainRepositery
@@ -11,7 +12,7 @@ class BeerRepositery extends MainRepositery
 
     public function __construct()
     {
-        parent::__construct(Beer::class);
+        parent::__construct(Beers::class);
     }
 }
 

@@ -4,7 +4,7 @@ namespace App\repositery;
 
 use App\models\Products;
 
-class ProductRepositery extends MainRepositery
+ class ProductRepositery
 {
     protected string $class;
     protected string $table;
