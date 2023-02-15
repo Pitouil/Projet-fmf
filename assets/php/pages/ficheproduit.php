@@ -1,5 +1,19 @@
 <?php
+
+use App\repositery\BeerRepositery;
+use App\repositery\BrandRepositery;
+use App\repositery\ProductRepositery;
+
 session_start();
+require '../../../vendor/autoload.php';
+
+$productRepositery = new ProductRepositery();
+$beerRepositery = new BeerRepositery();
+$brandRepositery = new BrandRepositery();
+$product = $productRepositery->findOneById($_GET['id']);
+$beer = $beerRepositery->findOneById($product->getBeersId());
+$brand = $brandRepositery->findOneById($product->getBrandId());
+
 $linkCss = '<link rel="stylesheet" href="../../css/produit.css" />';
 include_once '../partials/_header.php';
 ?>
@@ -8,8 +22,12 @@ include_once '../partials/_header.php';
     <div class="descriptionproduit">
         <div class="photoproduit"><img src="../../chouffe.jpg"></div>
         <div class="caracteristiques">
-            <p>La Chouffe est une bière blonde à triple fermentation, elle possède un haut degré d'alcool (8 % alc./vol.). Son arôme est particulier, fleur d'oranger ou pomme acide. </p><br>
-            <p>La Chouffe est produite en grande partie dans la Brasserie d'Achouffe en Wallonie. Cette brasserie est sous contrat avec la brasserie Duvel Moortgat7. L'identité de la marque est un lutin Marcel Chouffe, car d'après la marque elle-même, les lutins et farfadets seraient très présents dans les Ardennes. L'atelier attenant à la brasserie s'appelle l'auberge des Lutins. </p>
+            <h2><?= $brand->getName() ?></h2>
+            <p><?= $product->getDescription() ?> </p>
+            <p>Categories:<?= ' '.$beer->getMainFlavor().' / '.$beer->getTopStyle().' / '.$beer->getColor() ?></p>
+            <p>Degré d'alcool:<?= ' '.($beer->getAlcohol()/10).' %' ?></p>
+            <p>Contenance:<?= ' '.$beer->getContenance().' cl.' ?></p>
+            <p class="text-center">Prix:<?= ' '.($product->getPrice()/100).' €' ?></p>
         </div>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide  h-500" data-bs-ride="true">

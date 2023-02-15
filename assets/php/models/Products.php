@@ -14,9 +14,11 @@ class Products
 
     private ?bool $is_deleted=false;
 
-    private Beers $beers;
+    private ?int $beers_id = null;
 
-    private Brand $brand;
+    private ?int $brand_id = null;
+
+    private ?string $description = null;
 
     /**
      * @return int|null
@@ -108,43 +110,65 @@ class Products
         return $this;
     }
 
-
-
     /**
-     * @return Beers
+     * @return int|null
      */
-    public function getBeer(): Beers
+    public function getBeersId(): ?int
     {
-        return $this->beers;
+        return $this->beers_id;
     }
 
     /**
-     * @param Beers $beer
+     * @param int|null $beers_id
      * @return Products
      */
-    public function setBeer(Beers $beer): Products
+    public function setBeersId(?int $beers_id): Products
     {
-        $this->beer = $beer;
+        $this->beers_id = $beers_id;
         return $this;
     }
 
     /**
-     * @return Brand
+     * @return int|null
      */
-    public function getBrand(): Brand
+    public function getBrandId(): ?int
     {
-        return $this->brand;
+        return $this->brand_id;
     }
 
     /**
-     * @param Brand $brand
+     * @param int|null $brand_id
      * @return Products
      */
-    public function setBrand(Brand $brand): Products
+    public function setBrandId(?int $brand_id): Products
     {
-        $this->brand = $brand;
+        $this->brand_id = $brand_id;
         return $this;
     }
+
+    /**
+     * @return string|null
+     */
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string|null $description
+     * @return Products
+     */
+    public function setDescription(?string $description): Products
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+
+
+
+
+
 
 
 

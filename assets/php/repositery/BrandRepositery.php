@@ -36,4 +36,14 @@ class BrandRepositery extends MainRepositery
         $query->execute();
         return $query->fetchObject(Brand::class);
     }
+    public function findOneById(int $id)
+    {
+        $query = $this->pdo
+            ->prepare('SELECT *
+                                FROM brand 
+                                WHERE brand.id = ?');
+        $query->bindValue(1, $id);
+        $query->execute();
+        return $query->fetchObject(Brand::class);
+    }
 }

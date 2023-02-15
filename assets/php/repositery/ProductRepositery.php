@@ -31,4 +31,14 @@ class ProductRepositery extends MainRepositery
         $product->setId($this->pdo->lastInsertId());
         return $product;
     }
+    public function findOneById(int $id)
+    {
+        $query = $this->pdo
+            ->prepare('SELECT *
+                                FROM products 
+                                WHERE products.id = ?');
+        $query->bindValue(1, $id);
+        $query->execute();
+        return $query->fetchObject(Products::class);
+    }
 }
