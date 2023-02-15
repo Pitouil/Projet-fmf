@@ -12,11 +12,13 @@ class Products
 
     private ?string $created_at=null;
 
-    private ?string $is_deleted=null;
+    private ?bool $is_deleted=false;
 
-    private Beer $beer;
+    private ?int $beers_id = null;
 
-    private Brand $brand;
+    private ?int $brand_id = null;
+
+    private ?string $description = null;
 
     /**
      * @return int|null
@@ -91,58 +93,82 @@ class Products
     }
 
     /**
-     * @return string|null
+     * @return bool|null
      */
-    public function getIsDeleted(): ?string
+    public function getIsDeleted(): ?bool
     {
         return $this->is_deleted;
     }
 
     /**
-     * @param string|null $is_deleted
+     * @param bool|null $is_deleted
      * @return Products
      */
-    public function setIsDeleted(?string $is_deleted): Products
+    public function setIsDeleted(?bool $is_deleted): Products
     {
         $this->is_deleted = $is_deleted;
         return $this;
     }
 
     /**
-     * @return Beer
+     * @return int|null
      */
-    public function getBeer(): Beer
+    public function getBeersId(): ?int
     {
-        return $this->beer;
+        return $this->beers_id;
     }
 
     /**
-     * @param Beer $beer
+     * @param int|null $beers_id
      * @return Products
      */
-    public function setBeer(Beer $beer): Products
+    public function setBeersId(?int $beers_id): Products
     {
-        $this->beer = $beer;
+        $this->beers_id = $beers_id;
         return $this;
     }
 
     /**
-     * @return Brand
+     * @return int|null
      */
-    public function getBrand(): Brand
+    public function getBrandId(): ?int
     {
-        return $this->brand;
+        return $this->brand_id;
     }
 
     /**
-     * @param Brand $brand
+     * @param int|null $brand_id
      * @return Products
      */
-    public function setBrand(Brand $brand): Products
+    public function setBrandId(?int $brand_id): Products
     {
-        $this->brand = $brand;
+        $this->brand_id = $brand_id;
         return $this;
     }
+
+    /**
+     * @return string|null
+     */
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string|null $description
+     * @return Products
+     */
+    public function setDescription(?string $description): Products
+    {
+        $this->description = $description;
+        return $this;
+    }
+
+
+
+
+
+
 
 
 
