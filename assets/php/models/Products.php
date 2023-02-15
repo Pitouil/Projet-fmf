@@ -12,9 +12,9 @@ class Products
 
     private ?string $created_at=null;
 
-    private ?string $is_deleted=null;
+    private ?bool $is_deleted=false;
 
-    private Beer $beer;
+    private Beers $beers;
 
     private Brand $brand;
 
@@ -91,36 +91,38 @@ class Products
     }
 
     /**
-     * @return string|null
+     * @return bool|null
      */
-    public function getIsDeleted(): ?string
+    public function getIsDeleted(): ?bool
     {
         return $this->is_deleted;
     }
 
     /**
-     * @param string|null $is_deleted
+     * @param bool|null $is_deleted
      * @return Products
      */
-    public function setIsDeleted(?string $is_deleted): Products
+    public function setIsDeleted(?bool $is_deleted): Products
     {
         $this->is_deleted = $is_deleted;
         return $this;
     }
 
+
+
     /**
-     * @return Beer
+     * @return Beers
      */
-    public function getBeer(): Beer
+    public function getBeer(): Beers
     {
-        return $this->beer;
+        return $this->beers;
     }
 
     /**
-     * @param Beer $beer
+     * @param Beers $beer
      * @return Products
      */
-    public function setBeer(Beer $beer): Products
+    public function setBeer(Beers $beer): Products
     {
         $this->beer = $beer;
         return $this;

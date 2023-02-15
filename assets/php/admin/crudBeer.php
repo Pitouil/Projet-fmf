@@ -1,10 +1,57 @@
 <?php
 require '../../../vendor/autoload.php';
+
+use App\models\Beers;
+use App\models\Brand;
+use App\models\Products;
+use App\repositery\BeerRepositery;
+use App\repositery\BrandRepositery;
+use App\repositery\ProductRepositery;
+
+
+
+
+$productRepositery = new ProductRepositery();
+$beerRepositery = new BeerRepositery();
+$brandRepositery = new BrandRepositery();
+
+
+
+if (isset($_POST) && !empty($_POST)){
+    $brand = new Brand();
+    $product = new Products();
+    $beer = new Beers();
+    $brand->setName($_POST['brand']);
+    $product->setName($_POST['name']);
+    $product->setPrice($_POST['price']);
+    $dateTime = new DateTime();
+    $dateString = $dateTime->format('Y-m-d H:i:s');
+    $product->setCreatedAt($dateString);
+    $beer->setAlcohol($_POST['alcohol']);
+    $beer->setColor($_POST['color']);
+    $beer->setMainFlavor($_POST['mainFlavor']);
+    $beer->setTopStyle($_POST['topStyles']);
+    $beer->setContenance($_POST['contenance']);
+    dump($beer);
+    dump($product);
+    dump($brand);
+    $brandRepositery->addBrand($brand);
+    $beerRepositery->addBeer($beer);
+    $productRepositery->addProduct($product);
+
+}
+
+
+
+
+
+
+
 $linkCss = '<link rel="stylesheet" href="../../css/crudBeer.css" />';
 include_once '../partials/_header.php';
 $topStyles = ['IPA', 'Lambic', 'Pils', 'Saison', 'Sour', 'Stout', 'Triple', 'Weisbier', 'Witbier'];
-$colors = ['Ambree', 'Brune', 'Blonde', 'Blanche', 'Noir', 'Rouge', 'Autre'];
-$mainFlavors = ['Douces & Fruitee', 'Fumee', 'Houblonnee', 'Légere & Desalterante', 'Riche & Epicee', 'Sucree & Parfumee', 'Vive & Acidulee'];
+$colors = ['Ambrée', 'Brune', 'Blonde', 'Blanche', 'Noir', 'Rouge', 'Autre'];
+$mainFlavors = ['Douces & Fruitée', 'Fumée', 'Houblonneée', 'Légere & Désalterante', 'Riche & Epicée', 'Sucrée & Parfumée', 'Vive & Acidulée'];
 $alcohols = ['Sans alcool (<1.2%)', 'Moins de 5%', '5% a 8%', 'Plus de 8%'];
 
 ?>
